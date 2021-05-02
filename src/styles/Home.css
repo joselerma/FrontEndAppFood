@@ -1,0 +1,45 @@
+.imagen{
+    min-height: 100vh;
+    background-image:url('../images/italian-food-ingredients.jpg');
+    height:500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.barra{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    align-self: center;
+    color:#ffffff;
+    padding-right: 20px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+}
+
+.btn{
+    height: 44px;
+    width:300px;
+    font-size: 20px;
+
+}
+
+.button{
+    align-self: center;
+    background-color:#00838F;
+    font-size:16px;
+    padding:1rem;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    transition: background-color .3s ease;
+    margin-top:2rem;
+}
+
+    .button:hover{
+        background-color:#26C6DA;
+        cursor:pointer;
+    }

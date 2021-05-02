@@ -1,0 +1,51 @@
+.alinearFormulario {
+  display: block;
+  padding-top: 5rem;
+}
+.createRecipe {
+  min-height: 100vh;
+  background: gold; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #904e95,
+    gold
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #904e95, gold);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.createRecipe2 {
+  min-height: 100vh;
+  background: rgb(255, 0, 170); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #904e95,
+    rgb(255, 0, 170)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #904e95, rgb(255, 0, 170));
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form {
+  padding-bottom: 7rem;
+  font-size: 25px;
+}
+
+.inputCreate {
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.alinearTodo {
+  display: block;
+}
+
+.justifySelf {
+  margin-left: 250px;
+}

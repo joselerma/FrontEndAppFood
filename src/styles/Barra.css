@@ -1,0 +1,95 @@
+h4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-self: center;
+}
+.recipes {
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  width: 300px;
+  font-family: "Relaway", sans-serif;
+  color: #ffffff;
+  border: groove;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: rgb(0, 128, 75, 0.5); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(224, 211, 31, 0.5),
+    rgb(0, 128, 75, 0.5)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(224, 211, 31, 0.5),
+    rgb(0, 128, 75, 0.5)
+  );
+}
+
+.images {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  height: 100px;
+  justify-self: start;
+}
+.alinear2 {
+  position: fixed;
+  top: 2rem;
+}
+.alinear {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alinear3 {
+  position: fixed;
+  top: 20rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.alinear4 {
+  position: fixed;
+  display: flex;
+  bottom: 10px;
+}
+
+.noLink2 {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.noLink2 :hover {
+  box-shadow: 0 0 20px #4f9;
+}
+
+.separate {
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.abajo :hover {
+  box-shadow: 0 0 20px #4f9;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.separar {
+  margin-left: 15px;
+}
+.ordenarTipos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-sin-espacios {
+  padding: 0;
+  margin: 0;
+}
