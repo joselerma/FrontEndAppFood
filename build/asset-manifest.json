@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1cdefa9c.chunk.css",
+    "main.js": "/static/js/main.bacff47d.chunk.js",
+    "main.js.map": "/static/js/main.bacff47d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6c6a4f82.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6c6a4f82.js.map",
+    "static/js/2.29788f0c.chunk.js": "/static/js/2.29788f0c.chunk.js",
+    "static/js/2.29788f0c.chunk.js.map": "/static/js/2.29788f0c.chunk.js.map",
+    "static/js/3.4615a790.chunk.js": "/static/js/3.4615a790.chunk.js",
+    "static/js/3.4615a790.chunk.js.map": "/static/js/3.4615a790.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1cdefa9c.chunk.css.map": "/static/css/main.1cdefa9c.chunk.css.map",
+    "static/js/2.29788f0c.chunk.js.LICENSE.txt": "/static/js/2.29788f0c.chunk.js.LICENSE.txt",
+    "static/media/LandingPage.css": "/static/media/close-up-hand-holding-taco-with-copy-space.8bea42ea.jpg",
+    "static/media/SortAZ.css": "/static/media/frame-of-healthy-ingredients-for-cooking.cb6a0455.jpg",
+    "static/media/Home.css": "/static/media/italian-food-ingredients.7756fa8b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c6a4f82.js",
+    "static/js/2.29788f0c.chunk.js",
+    "static/css/main.1cdefa9c.chunk.css",
+    "static/js/main.bacff47d.chunk.js"
+  ]
+}

@@ -10,7 +10,6 @@ import {
   bringTypes,
 } from "../actions/index";
 import Pagination from "./Pagination";
-import logo from "../images/henry_Logo.png";
 import "../styles/Barra.css";
 import "../styles/SortAZ.css";
 import Recipes from "./Recipes";
