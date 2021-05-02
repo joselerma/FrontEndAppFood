@@ -1,6 +1,8 @@
 export function consultRecipe(search) {
   return function (dispatch) {
-    return fetch(`http://localhost:4000/recipes?name=${search}`)
+    return fetch(
+      ` https://powerful-badlands-29756.herokuapp.com/recipes?name=${search}`
+    )
       .then((response) => response.json())
       .then((json) => dispatch({ type: "CONSULT_RECIPE", payload: json }));
   };
@@ -23,7 +25,9 @@ export function ordenarXTypo(diet) {
 
 export function showRecipeDetails(recipeId) {
   return function (dispatch) {
-    return fetch(`http://localhost:4000/recipes/${recipeId}`)
+    return fetch(
+      ` https://powerful-badlands-29756.herokuapp.com/recipes/${recipeId}`
+    )
       .then((response) => response.json())
       .then((response) => {
         dispatch({
@@ -36,7 +40,7 @@ export function showRecipeDetails(recipeId) {
 
 export function sendFormulario(formulario) {
   return function (dispatch) {
-    return fetch(`http://localhost:4000/recipe`, {
+    return fetch(` https://powerful-badlands-29756.herokuapp.com/recipe`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -50,7 +54,7 @@ export function sendFormulario(formulario) {
 
 export function bringTypes() {
   return function (dispatch) {
-    return fetch(`http://localhost:4000/types`)
+    return fetch(` https://powerful-badlands-29756.herokuapp.com/types`)
       .then((response) => response.json())
       .then((response) => {
         dispatch({ type: "BRING_TYPES", payload: response });
