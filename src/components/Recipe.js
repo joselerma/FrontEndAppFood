@@ -9,12 +9,13 @@ import "../styles/Home.css";
 const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [showLocal, setShowLocal] = useState(false);
+  console.log(recipe);
   const handleClick = () => {
-    if (recipe[0].image === "logo") {
+    if (recipe && recipe.image && recipe.image === "logo") {
       setShowLocal(true);
       setShowDetails(true);
     } else {
-      showRecipeDetails(recipe[0].id);
+      showRecipeDetails(recipe && recipe.id && recipe.id);
       setShowDetails(true);
     }
   };
@@ -28,10 +29,10 @@ const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
       {!showDetails && (
         <div className="ordenarRecipe">
           <img
-            src={recipe[0].image == "logo" ? logo : recipe[0].image}
+            src={recipe.image == "logo" ? logo : recipe.image}
             className="imagesRecipe atBottom"
           />
-          <h2 className="atBottom">{recipe[0].title}</h2>
+          <h2 className="atBottom">{recipe && recipe.title && recipe.title}</h2>
           <input
             type="button"
             value="Show Details"
@@ -42,16 +43,16 @@ const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
       )}
       {showDetails && !showLocal && (
         <div className="flex-wrap">
-          <img src={recipe[0].image} className="imagesRecipe" />
-          <h1>{recipe[0].title}</h1>
-          <h3>Servings: {recipe[0].servings}</h3>
-          <h3>Ready in: {recipe[0].readyInMinutes} minutes</h3>
-          <h3>Health Score:{recipe[0].healthScore} </h3>
-          <h3>Recipe Score: {recipe[0].spoonacularScore}</h3>
+          <img src={recipe.image} className="imagesRecipe" />
+          <h1>{recipe.title}</h1>
+          <h3>Servings: {recipe.servings}</h3>
+          <h3>Ready in: {recipe.readyInMinutes} minutes</h3>
+          <h3>Health Score:{recipe.healthScore} </h3>
+          <h3>Recipe Score: {recipe.spoonacularScore}</h3>
           <div className="flex">
-            {recipe[0].dishTypes &&
-              recipe[0].dishTypes.length > 0 &&
-              recipe[0].dishTypes.map((elem, ind) => (
+            {recipe.dishTypes &&
+              recipe.dishTypes.length > 0 &&
+              recipe.dishTypes.map((elem, ind) => (
                 <div className="flex">
                   {ind === 0 && <h3>Dish Types: </h3>}
                   <h3>{elem}</h3>
@@ -59,9 +60,9 @@ const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
               ))}
           </div>
           <div className="flex">
-            {recipe[0].cuisines &&
-              recipe[0].cuisines.length > 0 &&
-              recipe[0].cuisines.map((elem, ind) => (
+            {recipe.cuisines &&
+              recipe.cuisines.length > 0 &&
+              recipe.cuisines.map((elem, ind) => (
                 <div className="flex">
                   {ind === 0 && <h3>Cuisines: </h3>}
                   <h3>{elem}</h3>
@@ -69,9 +70,9 @@ const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
               ))}
           </div>
           <div className="flex">
-            {recipe[0].diets &&
-              recipe[0].diets.length > 0 &&
-              recipe[0].diets.map((elem, ind) => (
+            {recipe.diets &&
+              recipe.diets.length > 0 &&
+              recipe.diets.map((elem, ind) => (
                 <div className="flex">
                   {ind === 0 && <h3>Diets Types: </h3>}
                   <h3>{elem}</h3>
@@ -128,21 +129,21 @@ const Recipe = ({ recipe, recipeDetails, showRecipeDetails, bringTypes }) => {
       {showDetails && showLocal && (
         <div className="flex-wrap">
           <img src={logo} className="imagesRecipe" />
-          <h1>{recipe[0].title}</h1>
+          <h1>{recipe.title}</h1>
           <h3>Health Score:{recipe[0].healthScore} </h3>
           <h3>Recipe Score: {recipe[0].spoonacularScore}</h3>
           <div className="flex">
-            {recipe[0].diets &&
-              recipe[0].diets.length > 0 &&
-              recipe[0].diets.map((elem, ind) => (
+            {recipe.diets &&
+              recipe.diets.length > 0 &&
+              recipe.diets.map((elem, ind) => (
                 <div className="flex">
                   {ind === 0 && <h3>Diets Types: </h3>}
                   <h3>{elem.name}</h3>
                 </div>
               ))}
           </div>
-          <h3>Resume:{recipe[0].ingredients}</h3>
-          <h3>Instructions:{recipe[0].steps}</h3>
+          <h3>Resume:{recipe.ingredients}</h3>
+          <h3>Instructions:{recipe.steps}</h3>
           <Link to="/Home">
             <input
               type="button"

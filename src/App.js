@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import CreateRecipe from "./components/CreateRecipe";
 import "./App.css";
 
-function App(props) {
+function App({ recipes }) {
   return (
     <React.Fragment>
       <Route exact path="/" component={LandingPage} />
@@ -18,10 +18,8 @@ function App(props) {
         render={({ match }) => (
           <Recipe
             recipe={
-              props.recipes &&
-              props.recipes.filter(
-                (recipe) => recipe.id === match.params.recipesId
-              )
+              recipes &&
+              recipes.find((recipe) => recipe.id == match.params.recipesId)
             }
           />
         )}
